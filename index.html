@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Smart Study Planner</title>
+  <link rel="stylesheet" href="style.css"/>
+<link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.css" rel="stylesheet" />
+
+<script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js"></script>
+</head>
+<body>
+  <header>
+    <h1>📚 Smart Study Planner</h1>
+  </header>
+
+  <main>
+    <section class="task-input">
+      <input type="text" id="taskTitle" placeholder="Enter study task..." />
+      <input type="date" id="taskDate" />
+      <button onclick="addTask()">Add Task</button>
+    </section>
+
+    <section class="task-list" id="taskList"></section>
+    <section class="calendar-section">
+  <h2>📆 Study Calendar</h2>
+  <div id="calendar"></div>
+</section>
+  </main>
+<section class="progress-section">
+  <div id="progressText">Progress: 0%</div>
+  <div class="progress-container">
+    <div id="progressBar"></div>
+  </div>
+</section>
+  <footer>
+    <p>&copy; Smart Study Planner | Boost Your Productivity</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

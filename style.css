@@ -1,0 +1,62 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f4f4f4;
+  color: #333;
+}
+
+header, footer {
+  background-color: #2c3e50;
+  color: white;
+  text-align: center;
+  padding: 1em;
+}
+
+main {
+  padding: 20px;
+}
+
+.task-input {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.task-input input, .task-input button {
+  padding: 10px;
+  font-size: 1em;
+}
+
+.task-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.task-item {
+  background: white;
+  padding: 15px;
+  border-left: 5px solid #3498db;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.progress-container {
+  width: 100%;
+  background: #ddd;
+  height: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+#progressBar {
+  height: 100%;
+  background: #2ecc71;
+  width: 0%;
+  border-radius: 10px;
+}.calendar-section {
+  margin-top: 40px;
+}
+
+#calendar {
+  max-width: 900px;
+  margin: 0 auto;
+}
